@@ -30,6 +30,12 @@ p{
     padding: 5px 20px;
 }
 
+h1{
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.356);
+    font-size: 5vw;
+}
 
 header nav ul li:hover{
     transform: scale(1.2);
@@ -84,21 +90,39 @@ header nav ul li{
     padding: 15px;
 }
 
-
-/* Deleete this margin */
-.margin{
-    margin:75% 0;
-
-}
-
-
 .parallax{
-    background:url("images/Tour29.webp")
-        repeat fixed 100%;
     background-size: cover;
 }
 
 .parallax-inner{
-    padding-top:10%;
-    padding-bottom: 10%;
+    padding-top:3%;
+    padding-bottom: 3%;
 }
+
+.pi02{
+    background:url("images/Tour29.webp")
+        repeat fixed 100%;
+}
+
+.pi01{
+    background:url("images/Tour03.webp")
+        repeat fixed 100%;
+}
+
+.column {
+    float: left;
+  }
+
+  .left{
+    width: 33%;
+  }
+
+  .right{
+    width: 67%;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
