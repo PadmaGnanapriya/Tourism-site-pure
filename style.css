@@ -1,4 +1,4 @@
- *{
+*{
     margin:0;
     padding:0;
     border:0;
@@ -16,7 +16,6 @@ body{
 a{
     text-decoration:none;
     color:white;
-
 }
 
 
@@ -28,13 +27,6 @@ a:hover{
 p{
     text-align: justify;
     padding: 5px 20px;
-}
-
-h1{
-
-    color: white;
-    background-color: rgba(0, 0, 0, 0.356);
-    font-size: 5vw;
 }
 
 header nav ul li:hover{
@@ -90,39 +82,49 @@ header nav ul li{
     padding: 15px;
 }
 
+
+
+/*-----Amazing background-----*/
 .parallax{
+    background:url("images/Tour29.webp")
+        repeat fixed 100%;
     background-size: cover;
 }
 
 .parallax-inner{
-    padding-top:3%;
-    padding-bottom: 3%;
+    padding-top:5%;
+    padding-bottom: 5%;
 }
+/*---x--Amazing background--x---*/
 
-.pi02{
-    background:url("images/Tour29.webp")
-        repeat fixed 100%;
-}
 
-.pi01{
-    background:url("images/Tour03.webp")
-        repeat fixed 100%;
-}
-
-.column {
-    float: left;
-  }
-
-  .left{
-    width: 33%;
-  }
-
-  .right{
-    width: 67%;
-  }
-
-  .row:after {
-    content: "";
+/* parallel paragraphss */
+.col-container {
     display: table;
-    clear: both;
+    width: 100%;
   }
+  .col {
+    display: table-cell;
+    padding: 16px;
+    
+  }
+  
+  .col1{
+      display: table-cell;
+        padding: 16px;
+      width:70%;
+  }
+  
+  .col2{
+      display: table-cell;
+        padding: 16px;
+      width:30%;
+  }
+
+  .box-1{
+    background-color: rgba(0, 0, 0, 0.925);
+    color: #fff;
+    border: 10px coral solid;
+    border-width: 7px;
+    padding: 30px;
+}
