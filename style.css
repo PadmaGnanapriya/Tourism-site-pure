@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #f4f4f4;
+    background-color: white;
     color: #555555;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -16,7 +16,9 @@ body{
 a{
     text-decoration:none;
     color:white;
+
 }
+
 
 a:hover{
     color: yellow;
@@ -25,7 +27,9 @@ a:hover{
 
 p{
     text-align: justify;
+    padding: 5px 20px;
 }
+
 
 header nav ul li:hover{
     transform: scale(1.2);
@@ -70,6 +74,17 @@ header nav ul li{
 }
 
 
+.text-area a{
+   
+    background-color: rgb(204, 84, 41);
+    padding: 10px;
+}
+
+.text-area img{
+    padding: 15px;
+}
+
+
 /* Deleete this margin */
 .margin{
     margin:75% 0;
@@ -84,6 +99,6 @@ header nav ul li{
 }
 
 .parallax-inner{
-    padding-top:20%;
-    padding-bottom: 20%;
+    padding-top:10%;
+    padding-bottom: 10%;
 }
