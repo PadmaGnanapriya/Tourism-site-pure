@@ -16,6 +16,8 @@ body{
 a{
     text-decoration:none;
     color:white;
+    background-color: rgb(204, 84, 41);
+    padding: 10px;
 }
 
 
@@ -71,13 +73,6 @@ header nav ul li{
     position: relative;
 }
 
-
-.text-area a{
-   
-    background-color: rgb(204, 84, 41);
-    padding: 10px;
-}
-
 .text-area img{
     padding: 15px;
 }
@@ -86,8 +81,6 @@ header nav ul li{
 
 /*-----Amazing background-----*/
 .parallax{
-    background:url("images/Tour29.webp")
-        repeat fixed 100%;
     background-size: cover;
 }
 
@@ -95,6 +88,25 @@ header nav ul li{
     padding-top:5%;
     padding-bottom: 5%;
 }
+
+.pi01{
+    background:url("images/Tour29.webp")
+        repeat fixed 100%;
+}
+
+.pi02{
+    background:url("images/Tour18.webp")
+        repeat fixed 100%;
+}
+
+
+.parallax a{
+    background-color: transparent;
+}
+
+
+
+
 /*---x--Amazing background--x---*/
 
 
@@ -122,9 +134,47 @@ header nav ul li{
   }
 
   .box-1{
-    background-color: rgba(0, 0, 0, 0.925);
+    background:url("images/Tour29.webp")
+    repeat fixed 100%;
     color: #fff;
     border: 10px coral solid;
     border-width: 7px;
     padding: 30px;
+}
+
+
+
+
+details{
+    font-size: 3vw;
+    color: white;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+.my-form{
+    padding: 20px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+.form-group{
+  padding-bottom: 15px;
+  color: white;
+}
+
+.my-form label{
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea{
+    padding: 8px;
+    width:60%;
+}
+
+.my-form input[type="submit"]{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border:none;
 }
