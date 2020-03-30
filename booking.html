@@ -29,7 +29,7 @@
 
 
     <div>
-        <h1>Records</h1>
+        <h1>Your Last Records</h1>
         <div id="user-data">
         </div>
         <br>
@@ -82,34 +82,5 @@
     
 You could tell javascript to perform the action "onload"... Try with this:
 
-<script type ="text/javascript">
-window.onload = function what(){
-var PRINTINGDATA='';
-var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-        vars[key] = value;
-    });
-    if(vars.balcony==='yes#marginz'){
-        vars.balcony='Yes';
-    } else if(vars.balcony==='no#marginz'){
-        vars.balcony='No';
-    }
-
-    var TITLEDATA= '<table style="width:100%"> <tr><th>username</th> <th>email</th> <th>hottel G.</th><th>date</th> <th>No of Guests</th><th>Balcony</th>  </tr>'   
-    var URLDATA =`<tr> <td>${vars.username}</td> <td>${vars.email}</td> <td>${vars.hottel}</td> <td>${vars.date}</td> <td>${vars.numberOfGuests}</td> <td>${vars.balcony}</td> </tr>`
-    var LAST='</table>'
-
-    if(PRINTINGDATA.length<2){
-        PRINTINGDATA=TITLEDATA
-    }
-    PRINTINGDATA=PRINTINGDATA+URLDATA
-    var PRINTDATA=PRINTINGDATA+LAST;
-
-
-    document.getElementById("user-data").innerHTML = PRINTDATA  
-    return PRINTINGDATA;
-};
-
-</script>
 </body>
 </html>
