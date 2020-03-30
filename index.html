@@ -29,7 +29,7 @@
     <div class="contaioner">
         <img width="100%" src="images/kandy.webp" alt="Sri Lanka">
         <div class="text-box">
-            <h4 id="index">Welcome to Sri Lanka</h4> <!--Welcome to Sri Lanka--> 
+            <h4 id="index"></h4> <!--Welcome to Sri Lanka--> 
           </div>
     </div> 
     <div class="text-area">
@@ -117,8 +117,8 @@
         
     </div>
     <section class="parallax pi01">
-        <div class="parallax-inner">
-            <h1  id="contact_link">FAQ s</h1>
+        <div class="parallax-inner" id="contact_link">
+            <a href="index.html#faq_link"><h1>FAQ s</h1></a>
         </div>
     </section>
 
@@ -219,7 +219,10 @@
               <p>Trincomalee</p>
               <p>Unawatuna</p>
               <p>Weligama</p>
-              <br> 
+              <br>
+              <h2>Where to go</h2><br>
+              <a href="Where-to-go.html" >Click here</a> 
+              <br>
           </div> 
         </div>
     </div>
@@ -282,8 +285,7 @@
 
     <section class="parallax pi02">
         <div class="parallax-inner">
-            <h1>Where to go ?</h1>
-        </div>
+            <a href="Where-to-go.html" ><h1>Where to go ?</h1></a>
     </section>
     <div id="amazing-places">
         <h1>Amazing places in Sri Lanka</h1>
@@ -387,8 +389,26 @@
         </article>
         <p>Copyright © Sri Lanka Tourism Development Authority. All Rights Reserved.  Created by <a target="_blank" href="https://www.linkedin.com/in/padma-gnanapriya-16b515180">Padma Gnanapriya</a></p>
     </footer>
-      
- 
-    
+    <script>
+        var i=0;
+        var txt=`Welcome to Sri Lanka`;
+        var speed=13;
+
+        function typeWriter(){
+            if(i<txt.length){
+                document.getElementById('index').innerHTML+=txt.charAt(i);
+                i++;
+                setTimeout(typeWriter,speed);    
+            }
+        }
+        typeWriter();
+
+
+        var p = function(){
+            var e = document.createElement("div");
+            e.setAttribute('class','pulse'),document.body.appendChild(e),e.style.top=event.pageY+'px',e.style.left=event.pageX+'px';
+        };
+        document.addEventListener('click', p);
+    </script>    
 </body>
 </html>
