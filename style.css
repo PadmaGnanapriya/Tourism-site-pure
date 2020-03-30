@@ -343,4 +343,8 @@ article {
       font-size: 2vw;
       color: black;
   }
+
+  .margin{
+      padding: 50px;
+  }
  
