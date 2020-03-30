@@ -5,26 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon_IAP_9.ico" type="image/gif" sizes="16x16">
 </head>
 <body>
     
-    <header>
+    <header id="header">
         
         <div>
-            <h1>AYUBOWAN SRI LANKA</h1>
+            <a href="#" onclick="navifunction()"><img id="home-icon" width="50px" src="images/home.png" alt="home" style="float: right; padding:10px"></a>
+            
+            <h1>AYUBOWAN LANKA </h1>
+            
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="history.html">History</a></li>
-                <li><a href="Where-to-go.html">Where to go</a></li>
+                <li><a href="Where-to-go.html">Places</a></li>
                 <li><a href="map.html">Map</a></li>
                 <li><a href="index.html#contact_link">Contact</a></li>
             </ul>    
         </nav>
     </header> 
-    <div class="margin">-----</div>
+    <div id="marginz">-----</div>
 
     <div class="contaioner">
         <img width="100%" src="images/kandy.webp" alt="Sri Lanka">
@@ -389,6 +393,7 @@
         </article>
         <p>Copyright © Sri Lanka Tourism Development Authority. All Rights Reserved.  Created by <a target="_blank" href="https://www.linkedin.com/in/padma-gnanapriya-16b515180">Padma Gnanapriya</a></p>
     </footer>
+    <script src="animation.js"></script> 
     <script>
         var i=0;
         var txt=`Welcome to Sri Lanka`;
@@ -409,6 +414,7 @@
             e.setAttribute('class','pulse'),document.body.appendChild(e),e.style.top=event.pageY+'px',e.style.left=event.pageX+'px';
         };
         document.addEventListener('click', p);
-    </script>    
+    </script>   
+    
 </body>
 </html>
