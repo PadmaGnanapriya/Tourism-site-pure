@@ -8,7 +8,7 @@
     <link rel="icon" href="images/favicon_IAP_6.ico" type="image/gif" sizes="16x16">
 </head>
 
-<body>
+<body onload="getUrlVars">
     <header id="header">       
         <div>
             <a href="#" onclick="navifunction()"><img id="home-icon" width="50px" src="images/home.png" alt="home" style="float: right; padding:10px"></a>           
@@ -28,7 +28,13 @@
     <div id="marginz">-----</div>
 
 
-
+    <div>
+        <h1>Records</h1>
+        <div id="user-data">
+        </div>
+        <br>
+        <br>
+    </div>
 
 
 
@@ -71,5 +77,39 @@
         </article>
         <p>Copyright © Sri Lanka Tourism Development Authority. All Rights Reserved.  Created by <a target="_blank" href="https://www.linkedin.com/in/padma-gnanapriya-16b515180">Padma Gnanapriya</a></p>
     </footer>
+    <script src="animation.js"></script>
+
+    
+You could tell javascript to perform the action "onload"... Try with this:
+
+<script type ="text/javascript">
+window.onload = function what(){
+var PRINTINGDATA='';
+var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    if(vars.balcony==='yes#marginz'){
+        vars.balcony='Yes';
+    } else if(vars.balcony==='no#marginz'){
+        vars.balcony='No';
+    }
+
+    var TITLEDATA= '<table style="width:100%"> <tr><th>username</th> <th>email</th> <th>hottel G.</th><th>date</th> <th>No of Guests</th><th>Balcony</th>  </tr>'   
+    var URLDATA =`<tr> <td>${vars.username}</td> <td>${vars.email}</td> <td>${vars.hottel}</td> <td>${vars.date}</td> <td>${vars.numberOfGuests}</td> <td>${vars.balcony}</td> </tr>`
+    var LAST='</table>'
+
+    if(PRINTINGDATA.length<2){
+        PRINTINGDATA=TITLEDATA
+    }
+    PRINTINGDATA=PRINTINGDATA+URLDATA
+    var PRINTDATA=PRINTINGDATA+LAST;
+
+
+    document.getElementById("user-data").innerHTML = PRINTDATA  
+    return PRINTINGDATA;
+};
+
+</script>
 </body>
 </html>
