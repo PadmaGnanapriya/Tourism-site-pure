@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     border:0;
+    box-sizing: border-box;
 }
 
 body{
@@ -40,18 +41,19 @@ header{
     background-color: rgb(204, 84, 41);
     color:white;
     width: 100%;
-    height: 70px;
+    height: 110px;
     padding-top: 20px;
     padding-bottom: 30px;
-    position: fixed;
     overflow: hidden;
+    position: fixed;
+
     z-index: 200;
 }
 
 header div{
     letter-spacing: 0.2em;
     word-spacing: 1em;
-    padding-bottom: 40px;
+    padding-bottom:15px;
 }
 
 header nav ul li{
@@ -108,31 +110,44 @@ header nav ul li{
 
 
 /*---x--Amazing background--x---*/
-
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 /* parallel paragraphss */
-.col-container {
+.columnA {
+    float: left;
+    width: 66.33%;
+    padding: 10px;
+  }
+  
+  .columnB {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+  }
+  
+  
+  .rowx:after {
+    content: "";
     display: table;
-    width: 100%;
-  }
-  .col {
-    display: table-cell;
-    padding: 16px;
-    
+    clear: both;
   }
   
-  .col1{
-      display: table-cell;
-        padding: 16px;
-      width:70%;
-  }
+  @media screen and (max-width: 480px) {
   
-  .col2{
-      display: table-cell;
-        padding: 16px;
-      width:30%;
-  }
-
+          .columnA{
+              width: 0%;
+              visibility:hide;
+              overflow:hidden;
+              display:none;
+            }
+          .columnB {
+            width: 100%;
+          } 
+      }
   .box-1{
     background:url("images/Tour29.webp")
     repeat fixed 100%;
@@ -243,23 +258,16 @@ details{
         display: block;
         margin: 0 0 3em 0;
         width: 100%;
+        width: 300px;
     }
 
         .image.main img {
             width: 100%;
         }
-
-
-
 /* Columns */
-
 .columns {
     position: relative;
-    -moz-column-count: 4;
-    -webkit-column-count: 4;
     column-count: 4;
-    -moz-column-gap: 1em;
-    -webkit-column-gap: 1em;
     column-gap: 1em;
 }
 
@@ -272,36 +280,67 @@ details{
     }
 
         .columns .image img {
-            -moz-transition: -moz-transform 0.2s ease-in-out;
-            -webkit-transition: -webkit-transform 0.2s ease-in-out;
-            -ms-transition: -ms-transform 0.2s ease-in-out;
             transition: transform 0.2s ease-in-out;
-            --webkit-backface-visibility: hidden;
-            --webkit-transform: translate3D(0, 0, 0);
         }
 
         .columns .image:hover img {
-            -moz-transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            -ms-transform: scale(1.1);
             transform: scale(1.1);
         }
 
     @media screen and (max-width: 736px) {
         .columns {
-            -moz-column-count: 2;
-            -webkit-column-count: 2;
             column-count: 2;
         }
+        
     }
 
     @media screen and (max-width: 480px) {
         .columns {
-            -moz-column-count: 1;
-            -webkit-column-count: 1;
             column-count: 1;
         }
+        .column1{
+            width: 0%;
+            visibility:hide;
+            overflow:hidden;
+            display:none;
+          }
+        .column2 {
+          width: 100%;
+        } 
     }
 
-
+    .columns{
+        background: rgb(204, 84, 41);;
+    }
 /*---x---Amazing places---x---*/
+
+article {
+    -webkit-column-width: 360px;
+    -moz-column-width: 360p;
+    column-width: 360p;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  footer{
+      background:url("images/Tour03.webp");   
+  }
+  
+  footer a{
+    background-color: rgba(0, 0, 0, 0.555);
+      font-weight: 500;
+  }
+  
+  footer article{
+      color: white;
+  }
+
+ fieldset{
+      text-align: left;
+      background-color: rgb(230, 111, 64);
+      list-style: none;
+      padding-left: 40px;
+      font-size: 2vw;
+      color: black;
+  }
+ 
