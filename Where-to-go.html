@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header id="main-header">
+            <div class="container">
+                <h1>Tourism in Sri Lanka</h1>
+            </div>
+        </header>
+
+        <nav id="navibar">
+          <a href="index.html">home</a>
+          <a href="about.html">About</a>
+          <a href="history.html">History</a>
+          <a href="Where-to-go.html">Where to go</a>
+          <a href="map.html">Map</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        
+        <div class="flex-box-padme">
+            <div class="flex-box-images">
+                <img src="kandee.webp">
+                <h4>Kandy</h4>
+            </div>
+            <div class="flex-box-images">
+                <img src="nuwara.webp">
+                <h4>Nuwara Eliya</h4>
+            </div>
+            <div class="flex-box-images">
+                <img src="galle.webp">
+                <h4>Galle</h4>
+            </div>
+            <div class="flex-box-images">
+                <img src="anuraduapuraya.webp">
+                <h4>Anuradapuraya</h4>
+            </div>
+            <div class="flex-box-images">
+                <img src="matara.webp">
+                <h4>Matara</h4>
+            </div>
+            <div class="flex-box-images">
+                <img src="sigiriya.webp">
+                <h4>Sigiriya</h4>
+            </div>
+            <div class="flex-box-images">
+                <img src="kithulgala.webp">
+                <h4>Kithulgala</h4>
+            </div>
+            <div class="flex-box-images">
+                <img src="Hortonplains.webp">  
+                <h4>Horton Plains</h4>
+            </div>
+            <div class="flex-box-images">
+                <img src="jafana.webp">
+                <h4>Jaffna</h4>
+            </div>
+            <div class="flex-box-images">
+                <img src="polonnaruwa.webp">        
+                <h4>Polonnaruwa</h4>   
+            </div>
+            <div class="flex-box-images">
+                <img src="hikkaduwa.webp">
+                <h4>Hikkaduwa</h4>
+            </div>
+            <div class="flex-box-images">
+                <img src="yaala.webp">
+                <h4>Yaala</h4> 
+            </div>         
+        </div>
+            
+
+        <a href="Where-to-go.html" class="box-3"><i></i>To the top</a>
+
+        <footer id="main-footer">
+            <p>
+                Copyright © Sri Lanka Tourism Development Authority. All Rights Reserved. 
+            </p>
+            <p>
+                Created by 
+                <a target="_blank" href="https://www.linkedin.com/in/padma-gnanapriya-16b515180">Padma Gnanapriya</a>
+            </p>
+        </footer>
+        
+        <script type="text/javascript">
+            var x;
+            function autoscroll(){
+            self.scrollBy(0,x)
+            }
+
+            function playautoscroll(){
+            x = 1;
+            setInterval('autoscroll()',0.01);
+            stop();}
+
+            function onetozero(){
+            x=0;
+            }
+
+            function stop(){
+            setTimeout ("onetozero()",6000);
+            }
+            window.onload=playautoscroll
+        </script>   
+    </body>
+</html>
