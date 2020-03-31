@@ -10,7 +10,7 @@ html {
 
 
 body{
-    background-color: white;
+    background-color:#FFFFFF;
     color: #555555;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -20,8 +20,8 @@ body{
 
 a{
     text-decoration:none;
-    color:white;
-    background-color: rgb(204, 84, 41);
+    color:#FFFFFF;
+    background-color: #bd4415;
     padding: 10px;
 }
 
@@ -30,7 +30,7 @@ a{
 }
 
 a:hover{
-    color: yellow;
+    color: 	#FFFF00;
     transform: scale(1.2);
 }
 
@@ -45,8 +45,8 @@ header nav ul li:hover{
 }
 
 header{   
-    background-color: rgb(204, 84, 41);
-    color:white;
+    background-color: #bd4415;
+    color:	#FFFFFF;
     width: 100%;
     height: 110px;
     padding-top: 10px;
@@ -74,7 +74,7 @@ header nav ul li{
 .text-box{
     position: absolute;
     top: 200px;
-    color: white;
+    color: 	#FFFFFF;
     background-color: rgba(0, 0, 0, 0.356);
     font-size: 10vw;
 }
@@ -169,7 +169,7 @@ header nav ul li{
 
 details{
     font-size: 3vw;
-    color: white;
+    color: 	#FFFFFF;
     padding-bottom: 10px;
     background-color: rgba(0, 0, 0, 0.555);
 }
@@ -182,7 +182,7 @@ details{
 
 .form-group{
   padding-bottom: 15px;
-  color: white;
+  color: 	#FFFFFF;
 }
 
 .my-form label{
@@ -351,14 +351,14 @@ article {
   }
   
   footer article{
-      color: white;
+      color: 	#FFFFFF;
   }
 
  fieldset{
-      background-color: rgb(230, 111, 64);
+      background-color: #bd4415;
       padding-left: 40px;
       font-size: 2vw;
-      color: black;
+      color: #000000;
   }
 
   #marginz{
@@ -385,7 +385,7 @@ article {
 
 .flex-box-padme img:hover{
       transform: scale(1.1);
-      border: 2px solid red;
+      border: 2px solid #FF0000;
 } 
 
 .flex-box-images h4{
@@ -440,7 +440,7 @@ article {
 
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid #000000;
     border-collapse: collapse;
   }
   th, td {
