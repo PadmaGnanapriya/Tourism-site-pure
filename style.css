@@ -160,9 +160,8 @@ header nav ul li{
     background:url("images/Tour29.webp")
     repeat fixed 100%;
     color: #fff;
-    border: 10px coral solid;
-    border-width: 7px;
     padding: 30px;
+
 }
 
 
@@ -341,9 +340,7 @@ details{
         } 
     }
 
-    .columns{
-        background: rgb(204, 84, 41);;
-    }
+
 /*---x---Amazing places---x---*/
 
 article {
