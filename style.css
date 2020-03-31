@@ -204,9 +204,9 @@ details{
 /*-------Amazing places-------*/
 
 
-/* Basic */
+/* @-ms-viewport */
 
-@-ms-viewport {
+@viewport {
     width: device-width;
 }
 
@@ -329,24 +329,14 @@ details{
         .columns {
             column-count: 1;
         }
-        .column1{
-            width: 0%;
-            visibility:hide;
-            overflow:hidden;
-            display:none;
-          }
-        .column2 {
-          width: 100%;
-        } 
     }
 
 
 /*---x---Amazing places---x---*/
 
 article {
-    -webkit-column-width: 360px;
-    -moz-column-width: 360p;
-    column-width: 360p;
+    -moz-column-width: 360px;
+    column-width: 360px;
     padding: 20px;
     margin-bottom: 30px;
   }
@@ -365,9 +355,7 @@ article {
   }
 
  fieldset{
-      text-align: left;
       background-color: rgb(230, 111, 64);
-      list-style: none;
       padding-left: 40px;
       font-size: 2vw;
       color: black;
